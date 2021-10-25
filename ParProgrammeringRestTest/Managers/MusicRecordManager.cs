@@ -19,5 +19,17 @@ namespace ParProgrammeringRestTest.Managers
         {
             return new List<MusicRecord>(liste);
         }
+        public MusicRecord GetByTitle(string title)
+        {
+            return liste.Find(record => record.Title == title);
+        }
+        public MusicRecord GetByArtist(string artist)
+        {
+            return liste.Find(record => record.Artist == artist);
+        }
+        public MusicRecord GetByYear(int year)
+        {
+            return liste.Find(record => record.PublicationYear == year);
+        }
     }
 }
