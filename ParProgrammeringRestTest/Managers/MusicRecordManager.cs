@@ -12,7 +12,9 @@ namespace ParProgrammeringRestTest.Managers
         private static List<MusicRecord> liste = new List<MusicRecord>
         {
             new MusicRecord{Title = "Bohemian Rhapsody", Artist = "Queen", Duration = 300, PublicationYear = 1975},
-            new MusicRecord{Title = "Asmus Sang", Artist = "Asmus", Duration = 170, PublicationYear = 2021}
+            new MusicRecord{Title = "Asmus Sang", Artist = "Asmus", Duration = 170, PublicationYear = 2021},
+            new MusicRecord{Title = "Emilio", Artist = "Emil", Duration = 194, PublicationYear = 2028}
+
         };
 
         public List<MusicRecord> GetAllRecords()
