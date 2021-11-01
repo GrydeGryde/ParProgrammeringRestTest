@@ -51,7 +51,7 @@ jobs:
     - name: Azure Login
       uses: azure/login@v1
       with:
-        creds: ${{ env.AZURE_APIM_SERVICE_PRINCIPAL }}
+        creds: ${{ secrets.AZURESECRET }}
     - name: Install Swashbuckle CLI .NET Global Tool
       run: dotnet tool install --global Swashbuckle.AspNetCore.Cli --version ${{ env.SWASHBUCLE_ASPNET_CORE_CLI_PACKAGE_VERSION }}
     - name: Generate Open API Specification Document
