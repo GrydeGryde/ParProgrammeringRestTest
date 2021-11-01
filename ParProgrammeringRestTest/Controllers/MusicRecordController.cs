@@ -23,7 +23,7 @@ namespace ParProgrammeringRestTest.Controllers
             return _manager.GetAllRecords();
         }
 
-        [Route("/{title}")]
+        [Route("{title}")]
         public MusicRecord GetByTitle(string title)
         {
             return _manager.GetByTitle(title);
